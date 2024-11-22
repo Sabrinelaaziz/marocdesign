@@ -1,0 +1,113 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #64a7ea;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    width: 80%;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fdfafd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e5e5e5;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #010506;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #0770d8;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #060700;
+    margin-top: 8px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #0d060d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d63eb5;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+select {
+    padding: 12px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+}
+
+.captcha-img {
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #888;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.form-group .captcha input {
+    width: 70%;
+    display: inline-block;
+}
+
+button:focus, input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #ff61e7;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+input:focus, textarea:focus {
+    border-color:yellow; 
+    outline: none;
+    box-shadow: 0 0 5px yellow}
